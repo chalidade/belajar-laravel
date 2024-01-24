@@ -7,8 +7,7 @@
 </head>
 <body>
     <form action="/form/prosess" method="post">
-        <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>" />
-        
+        @csrf
         <p>Nama : <input type="text" name="nama" placeholder="Nama Lengkap" /></p>
         <p>Kelas : <input type="text" name="kelas" placeholder="Kelas" /></p>
         <p>Alamat : <input type="text" name="alamat" placeholder="Alamat" /></p>
